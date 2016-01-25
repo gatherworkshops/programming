@@ -1,0 +1,35 @@
+name: Programming
+
+baseurl: "/programming"
+theme_assets: "/programming/theme/assets"
+theme_images: "/programming/theme/assets/images"
+course_images: "/programming/media/images"
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  enable_coderay: false
+
+# Where things are
+source:       .
+destination:  ./_site
+layouts_dir:  ./theme/_layouts
+includes_dir: ./theme/_includes
+sass:
+    sass_dir: ./theme/_sass
+
+# custom collections
+collections:
+  assets:
+    output: true
+  courses:
+    output: true
+    layout: chapter
+
+
+# theme
+themecolor: "#466f1b"
+
+# keep the built site tidy, only include files we need for publishing
+exclude: ["node_modules", "Gemfile", "Gruntfile.js", "package.json", "README.md", "*.sublime-project", "*.sublime-workspace"]

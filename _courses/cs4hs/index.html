@@ -1,0 +1,28 @@
+---
+layout: workshop
+title: CS4HS Workshop
+course: cs4hs
+
+standard: AS91073
+heading: Python Programming
+tagline: Create a complex computer program for a specified purpose
+
+studentsurvey: https://gather.typeform.com/to/m3cJsR
+teachersurvey: https://gather.typeform.com/to/rLqMQK
+
+---
+
+<div class="row">
+
+    {% for chapter in site.data.courses[page.course] %}
+
+
+        {% include chapter-tile.html %}
+
+
+    {% endfor %}
+
+</div>
+
+
+

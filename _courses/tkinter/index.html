@@ -1,0 +1,52 @@
+---
+layout: workshop
+title: Apps with TkInter
+course: tkinter
+
+standard: AS91073
+heading: Apps with TkInter
+tagline: AS-91073 Create a complex computer program for a specified purpose
+
+studentsurvey: https://gather.typeform.com/to/m3cJsR
+teachersurvey: https://gather.typeform.com/to/rLqMQK
+
+quests:
+    
+    - name: unknown
+      subtitle: Quest One
+      title: Quest One
+    
+---
+
+<div class="row">
+
+    {% for chapter in site.data.courses[page.course] %}
+
+
+        {% include chapter-tile.html %}
+
+
+    {% endfor %}
+
+</div>
+
+
+
+
+<!--div class="row">
+    <div class="col-md-12">
+        <h2 class="break">Extra Quests for the Curious...</h2>
+    </div>
+</div-->
+
+<!--div class="row curiosity-quests">
+
+    {% for tiledata in page.quests %}
+
+        {% include chapter-tile.html %}
+
+    {% endfor %}
+
+</div-->
+
+

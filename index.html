@@ -1,0 +1,35 @@
+---
+layout: home
+title: Courses
+tagline: An introduction to coding.
+
+courses:
+
+    - name: tkinter
+      title: Apps With TkInter
+      standard: 91637
+      length: 10 hours
+      description: Planning and building graphical Python apps using the TkInter visual component library for desktop. 
+---
+
+<div class="container page-header">
+    <h1>{{ site.name }}</h1>
+    <p>{{ page.tagline }}</p>
+</div>
+
+<div class="container">
+    <div class="row chapter-links">
+
+
+
+        {% for course in page.courses %}
+
+            {% include course-tile.html %}
+
+        {% endfor %}
+
+
+
+    </div>
+</div>
+

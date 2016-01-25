@@ -1,0 +1,137 @@
+taster:
+  - name: welcome
+    subtitle: Course Intro
+    title: Welcome
+
+  - name: helloworld
+    subtitle: Chapter One
+    title: Hello World
+
+  - name: turtles
+    subtitle: Chapter Two
+    title: Turtles
+
+
+
+cs4hs:
+
+  - name: welcome
+    subtitle: Course Intro
+    title: Welcome
+    description: Workshop plan and intro
+
+  - name: ciphers
+    subtitle: Course Intro
+    title: Ciphers
+    description: Workshop plan and intro
+
+  - name: caesar-cipher
+    subtitle: Course Intro
+    title: Caesar Cipher
+    description: Workshop plan and intro
+
+  - name: vigenere-cipher
+    subtitle: Course Intro
+    title: Vigenere Cipher
+    description: Workshop plan and intro
+
+  - name: vernam-cipher
+    subtitle: Course Intro
+    title: Vernam Cipher
+    description: Workshop plan and intro
+
+  - name: photo-filters
+    subtitle: Course Intro
+    title: Photo Filters
+    description: Workshop plan and intro
+
+  - name: colour-channels
+    subtitle: Course Intro
+    title: Colour Channels
+    description: Workshop plan and intro
+
+  - name: desaturation
+    subtitle: Course Intro
+    title: Desaturation
+    description: Workshop plan and intro
+
+  - name: blending
+    subtitle: Course Intro
+    title: Blending
+    description: Workshop plan and intro
+
+  - name: web-frameworks
+    subtitle: Course Intro
+    title: Web Frameworks
+    description: Workshop plan and intro
+
+  - name: routing
+    subtitle: Course Intro
+    title: Routing
+    description: Workshop plan and intro
+
+  - name: templates
+    subtitle: Course Intro
+    title: Templates
+    description: Workshop plan and intro
+
+  - name: data-models
+    subtitle: Course Intro
+    title: Data Models
+    description: Workshop plan and intro
+
+
+
+
+tkinter:
+
+  - name: welcome
+    subtitle: Course Intro
+    title: Welcome
+    description: Course plan and intro
+
+  - name: review
+    subtitle: Chapter One
+    title: Skills Review
+    description: What we already know
+
+  - name: gui
+    subtitle: Chapter Two
+    title: Graphical Widgets
+    description: Available Tkinter Widgets
+
+  - name: layouts
+    subtitle: Chapter Three
+    title: Layouts
+    description: Using The Grid Manager
+
+  - name: events
+    subtitle: Chapter Four
+    title: Interaction
+    description: Mouse and Keyboard Events
+
+  - name: data
+    subtitle: Chapter Five
+    title: Data Management
+    description: Classes and Complex Data
+    published: false
+
+  - name: planning
+    subtitle: Chapter Six
+    title: Planning
+    description: Coming Soon
+    published: false
+
+  - name: building
+    subtitle: Chapter Seven
+    title: Build and Test
+    description: Coming Soon
+    published: false
+
+  - name: submission
+    subtitle: Chapter Eight
+    title: Submission
+    description: Coming Soon
+    published: false
+
+

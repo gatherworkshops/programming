@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>User Interaction</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- google translate - language identifier -->
+        <meta name="google-translate-customization" content="a148a80643fbe5d7-b9de7b0f0180d6d8-g318479cea978092f-2b"></meta>
+
+        <!-- Bootstrap -->
+        <link href="/programming/theme/assets/submodules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="/programming/assets/submodules/jquery/jquery-1.11.2.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/programming/theme/assets/submodules/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Custom Fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+
+        <!-- revealjs for slideshows -->
+        <link rel="stylesheet" href="/programming/theme/assets/submodules/revealjs/css/reveal.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/programming/theme/assets/css/styles.css">
+
+        <!-- Prism -->
+        <link rel="stylesheet" href="/programming/theme/assets/submodules/prism/prism.css">
+        <script src="/programming/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/programming/favicon.ico">
+
+    </head>
+
+    <body class="chapter hello">
+<nav id="mainNavigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container-fluid">
+  
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="/programming/">
+      	<img class="avatar" src="/programming/theme/assets/images/gw-avatar.png">
+      	Programming 
+        <span class="title"> | </span>
+      </a>
+
+      
+      <!-- chapter switcher -->
+      <ul class="chapter-switcher nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User Interaction <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+
+            
+
+          </ul>
+        </li>
+      </ul>
+      <!-- end chapter switcher -->
+
+      
+
+    </div>
+
+
+    
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+      <ul class="site-nav nav navbar-nav">
+
+      	
+
+  			<!-- page -->
+  			
+  			
+
+		    
+
+			<li class="">
+				<a href="/programming//">Home</a>
+			</li>
+
+		
+
+  			<!-- page -->
+  			
+  			
+
+		    
+
+			<li class="">
+				<a href="/programming/courses/taster">Taster</a>
+			</li>
+
+		
+
+  			<!-- page -->
+  			
+  			
+
+		    
+
+			<li class="">
+				<a href="/programming/courses/workshop">Workshop</a>
+			</li>
+
+		
+
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+
+		<div class="slideshow">
+
+			<div class="reveal">
+
+				<!-- Any section element inside of this container is displayed as a slide -->
+				<div class="slides">
+
+
+
+
+
+<!-- slide -->
+<section class="title-slide"
+		
+	
+		id=""
+		data-background="/programming/media/images/theme/theme-tile.svg" 
+		data-background-color="#466f1b"
+		data-background-size="200px" 
+		data-background-repeat="repeat"
+	
+	>
+		
+
+<p><img src="/programming/assets/images/gw_logo.png" alt="Gather Workshops Logo" /></p>
+
+<h1 id="user-interaction">User Interaction</h1>
+<p><em>Reacting to interface events</em></p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="pythonevents"
+	
+	>
+		
+
+<h2 id="python-events">Python Events</h2>
+
+<p>An “event” in Python is when something <br />
+happens that our app can react to.</p>
+
+
+<aside class="notes">
+
+Events are a common concept across languages, Python included.
+
+In programming, an event is something which happens in your app which you have the choice of programming your app to react to.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="widgetevents"
+	
+	>
+		
+
+<h2 id="widget-events">Widget Events</h2>
+
+<p>Tkinter Widgets trigger different types of events<br />
+when a user interacts with the app.</p>
+
+
+<aside class="notes">
+
+The widgets available from the Tkinter library have a whole bunch of events programmed into them.
+
+We can tell our app to look out for those events, and to run specific code when they occur.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="eventtypes"
+	
+	>
+		
+
+<h2 id="event-types">Event Types</h2>
+
+<p>The most common types of events are:</p>
+
+<ul class="flex-list">
+  <li><img src="/programming/media/images/icons/mouse.svg" alt="A Computer Mouse" height="150" /><br />
+<strong>Mouse Events</strong><br />
+click, move, hover</li>
+  <li><img src="/programming/media/images/icons/gaming-keys.svg" alt="Gaming Keys" height="150" /><br />
+<strong>Keyboard Events</strong><br />
+key down, key up</li>
+  <li><img src="/programming/media/images/icons/resize.svg" alt="Resizing A Window" height="150" /><br />
+<strong>Change Events</strong><br />
+resize, select, focus</li>
+</ul>
+
+
+<aside class="notes">
+
+There are many types of events, but the ones we usually pay attention to are mouse events, keyboard events, and change events.
+
+These three types of events cover most of the user interactions that we care about.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="thingsweneed"
+	
+	>
+		
+
+<h2 id="things-we-need">Things We Need</h2>
+
+<p>To react to an event we need three things:</p>
+
+<ul class="flex-list">
+  <li><strong>A Widget</strong><br /><br />
+Which widget will trigger the event?</li>
+  <li><strong>The Event Name</strong><br /><br />
+Which event are we expecting?</li>
+  <li><strong>A Function</strong><br /><br />
+What code do we want to run in response?</li>
+</ul>
+
+
+<aside class="notes">
+
+When we want to react to an event, we need three things:
+
+1. Which widget will trigger it
+2. The exact name of the event
+3. A function to run when the event happens
+
+With this information, we can "bind" a function to the event.
+
+The function should contain code you only want to run when the event occurs.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="bindingcode"
+	
+	>
+		
+
+<h2 id="event-binding">Event Binding</h2>
+
+<p>We use the <code>bind</code> function to link all the parts together:</p>
+
+<pre data-line="1-2, 7-8, 10-12"><code class="language-python">import tkinter
+window = tkinter.Tk()
+
+def say_hello(event):
+    print("Why hello there!")
+
+mystery_button = tkinter.Button(window)
+mystery_button.config(text="Click Me")
+mystery_button.bind("&lt;Button&gt;", say_hello)
+mystery_button.grid()
+
+window.mainloop()
+</code></pre>
+
+<p>This is just an example - we’ll do a demo next!</p>
+
+
+<aside class="notes">
+
+Once we know which widget, which event, and which function, then we can write the code to tie them all together.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="eventsdemo"
+	
+	>
+		
+
+<h2 id="events-demo">Events Demo</h2>
+
+<p>Open up <code>eventsdemo.py</code><br />
+so we can add some event handling to it.</p>
+
+
+<aside class="notes">
+
+Open up eventsdemo.py
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="clickevent"
+	
+	>
+		
+
+<h2 id="click-events">Click Events</h2>
+
+<p>Add a click event binding to the <code>hello_button</code>:</p>
+
+<pre data-line="1-2, 4"><code class="language-python">hello_button = tkinter.Button(window)
+hello_button.config(text="Click Me")
+hello_button.bind("&lt;Button&gt;", say_hello)
+hello_button.grid()
+</code></pre>
+
+<p class="checkpoint">Clicking the button should print “Hello!” in the console.</p>
+
+
+<aside class="notes">
+
+Add a click event using `<Button>`  
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="moreclickevents"
+	
+	>
+		
+
+<h2 id="more-click-events">More Click Events</h2>
+
+<p>Make the other buttons work, too:</p>
+
+<ul>
+  <li><strong>Add Random Fruit</strong></li>
+  <li><strong>Delete Fruit</strong></li>
+  <li><strong>Generate Recipe</strong></li>
+</ul>
+
+
+<aside class="notes">
+Make all the other buttons work, too.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="keyboardevents"
+	
+	>
+		
+
+<h2 id="keyboard-events">Keyboard Events</h2>
+
+<p>Bind the <strong>name entry</strong> box to the <code>&lt;Return&gt;</code> event,<br />
+so that pressing “enter” does the same as clicking the button.</p>
+
+
+<aside class="notes">
+Make it so that pressing Enter while in the name input does the same thing as clicking Say Hello
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="challenge"
+	
+	>
+		
+<h2 id="challenge-stuff-to-do">Challenge: Stuff To Do</h2>
+
+<p>Complete <code>todo.py</code> with events and functionality<br />
+so that it is a working To-Do app.</p>
+
+
+<aside class="notes">
+
+Add event bindings to the app. 
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="summary"
+	
+	>
+		
+
+<p><img src="/programming/assets/images/thumbs-up.svg" alt="Thumbs Up!" height="200" /></p>
+
+<h2 id="user-interaction-complete">User Interaction: Complete!</h2>
+
+<p>Groovy, but what about more complex data…<br />
+<a href="data.html">Take me to the next chapter!</a></p>
+
+
+<aside class="notes">
+
+Great! Now that's all sorted, let's get started!
+
+</aside>
+
+</section>
+
+
+
+
+				</div>
+
+			</div><!-- .reveal -->
+
+
+
+
+			<div class="sidenotes">
+				<div class="content">
+					<!-- display notes here using js -->
+					<p>Loading...</p>
+				</div>
+			</div>
+
+		</div><!-- .slideshow -->
+			
+		<div class="page-content">
+
+<section class="container content-panel">
+
+  <h2 id="widget-events">Widget Events</h2>
+
+  <h3 id="mouse-buttons">Mouse Buttons</h3>
+
+  <ul>
+    <li><strong><code>&lt;Button&gt;</code></strong><br />
+Mouse click, any button</li>
+    <li><strong><code>&lt;Button-1&gt;</code></strong><br />
+Mouse left-click</li>
+    <li><strong><code>&lt;Button-2&gt;</code></strong><br />
+Mouse middle-click</li>
+    <li><strong><code>&lt;Button-3&gt;</code></strong><br />
+Mouse right-click</li>
+    <li><strong><code>&lt;Button-4&gt;</code></strong><br />
+Mouse scroll-up</li>
+    <li><strong><code>&lt;Button-5&gt;</code></strong><br />
+Mouse scroll-down</li>
+  </ul>
+
+  <h3 id="mouse-movement">Mouse Movement</h3>
+
+</section>
+
+<p><a href="https://thenounproject.com/search/?q=mouse&amp;i=5534">Mouse by Olivier Guin from the Noun Project</a></p>
+
+<p><a href="https://thenounproject.com/search/?q=single+keyboard+key&amp;i=62295">Gaming Keys by Daniel Sikorski from the Noun Project</a></p>
+
+<p><a href="https://thenounproject.com/search/?q=resize&amp;i=36733">Resize by Mister Pixel from the Noun Project</a></p>
+
+
+		</div>
+
+
+
+		<script src="/programming/theme/assets/submodules/revealjs/lib/js/head.min.js"></script>
+<script src="/programming/theme/assets/submodules/revealjs/js/reveal.min.js"></script>
+
+<script>
+
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: '/programming/theme/assets/submodules/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			/*{ src: '/programming/assets/submodules/revealjs/plugin/markdown/marked.js' },
+			{ src: '/programming/assets/submodules/revealjs/plugin/markdown/markdown.js' },*/
+			{ src: '/programming/theme/assets/submodules/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: '/programming/theme/assets/submodules/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: '/programming/theme/assets/submodules/sidenotes/sidenotes.js' }
+			/*{ src: '/programming/assets/submodules/prism/prism.js', callback: function() { Prism.highlightAll() }}*/
+		]
+	});
+    
+    function checkNotesState() {
+
+	    // show the notes on page load if notesByDefault has been 
+	    // set to true in the page's front matter.
+	    
+	      var notesByDefault = false;
+	    
+
+	    if(notesByDefault == true) {
+	    	Sidenotes.showNotes();
+	    }
+	}
+
+	
+		
+
+</script>
+
+		<script>
+
+		// adds a class 'codeblock-title' to the paragraph element
+		// directly preceding any '.highlight' code block.
+		// the title is used to give instructions on where to place
+		// the code from the code block.
+		$(document).ready( function(){
+
+			$('.highlight').prev('p').addClass('codeblock-title');
+			
+		});
+
+
+		// checkpoints are able to be clicked to go to the next slide.
+		// when clicked they also visibly update to a green style.
+		$(document).ready( function() {
+			Reveal.addEventListener( 'ready', function( event ) {
+    			
+    			$('.checkpoint').click( function(){
+					$(this).addClass('checked');
+					setTimeout( Reveal.next, 1000 );
+				});
+
+			});
+		});
+
+		</script>
+
+	</body>
+</html>
