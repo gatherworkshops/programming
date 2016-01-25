@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Binary Blink</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- google translate - language identifier -->
+        <meta name="google-translate-customization" content="a148a80643fbe5d7-b9de7b0f0180d6d8-g318479cea978092f-2b"></meta>
+
+        <!-- Bootstrap -->
+        <link href="/arduino/theme/assets/submodules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="/arduino/assets/submodules/jquery/jquery-1.11.2.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/arduino/theme/assets/submodules/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Custom Fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+
+        <!-- revealjs for slideshows -->
+        <link rel="stylesheet" href="/arduino/theme/assets/submodules/revealjs/css/reveal.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/arduino/theme/assets/css/styles.css">
+
+        <!-- Prism -->
+        <link rel="stylesheet" href="/arduino/theme/assets/submodules/prism/prism.css">
+        <script src="/arduino/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/arduino/favicon.ico">
+
+    </head>
+
+    <body class=" hello">
+<nav id="mainNavigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container-fluid">
+  
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="/arduino/">
+      	<img class="avatar" src="/arduino/theme/assets/images/gw-avatar.png">
+      	Electronics with Arduino 
+        <span class="title"> | </span>
+      </a>
+
+      
+        <span class="navbar-brand title"> Binary Blink </span>
+      
+
+    </div>
+
+
+    
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+      <ul class="site-nav nav navbar-nav">
+
+      	
+
+  			<!-- page -->
+  			
+  			
+
+		    
+
+			<li class="">
+				<a href="/arduino//">Home</a>
+			</li>
+
+		
+
+  			<!-- page -->
+  			
+  			
+
+		    
+
+			<li class="">
+				<a href="/arduino/courses/taster">Taster</a>
+			</li>
+
+		
+
+  			<!-- page -->
+  			
+  			
+
+		    
+
+			<li class="">
+				<a href="/arduino/courses/workshop">Workshop</a>
+			</li>
+
+		
+
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+
+		<div class="slideshow">
+
+			<div class="reveal">
+
+				<!-- Any section element inside of this container is displayed as a slide -->
+				<div class="slides">
+
+
+
+
+
+<!-- slide -->
+<section class="title-slide"
+		
+	
+		id=""
+		data-background="/arduino/media/images/theme/theme-tile.svg" 
+		data-background-color="#8E0E00"
+		data-background-size="200px" 
+		data-background-repeat="repeat"
+	
+	>
+		
+
+<p><img src="/arduino/theme/assets/images/gw_logo.png" alt="Gather Workshops Logo" /></p>
+
+<h1 id="binary-blink">Binary Blink</h1>
+<p><em>Light on, light off.</em></p>
+
+
+<aside class="notes">
+
+Welcome to Electronics with Arduino!
+
+This taster is designed to introduce you to the basics of sensor input and real-world output using Arduino.
+
+By the end of the workshop you will have built and coded a selection of small electronics demo projects.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="overview"
+	
+	>
+		
+
+<p><img src="/arduino/media/images/slidecontent/binary-demo.gif" alt="Rainbow Dash turning light on and off" /></p>
+
+<h2 id="what-we-are-making">What We Are Making</h2>
+
+<p>Turn a light on and off by pushing a button.</p>
+
+
+<aside class="notes">
+Turn a light on and off by pushing a button.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="hardware"
+	
+	>
+		
+
+<h2 id="bits-we-need">Bits We Need</h2>
+
+<ul class="flex-list">
+  <li><img src="/arduino/media/images/slidecontent/arduino-led-red.svg" alt="Red LED" height="100" /><br />
+<strong>LED</strong><br />
+A visual output for our circuit</li>
+  <li><img src="/arduino/media/images/slidecontent/arduino-button.svg" alt="Button" height="100" /><br />
+<strong>Button</strong><br />
+An input, used to turn our light on and off</li>
+  <li><img src="/arduino/media/images/slidecontent/arduino-resistor-10k.svg" alt="10k Ohm Resistor" height="100" /><br />
+<strong>10k Resistor</strong><br />
+To regulate the voltage readings from the button</li>
+  <li><img src="/arduino/media/images/slidecontent/arduino-wire.svg" alt="Wire" height="100" /><br />
+<strong>Wires</strong><br />
+To connect everything together!</li>
+</ul>
+
+
+<aside class="notes">
+
+LED, Button, Wires
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="led-overview"
+	
+	>
+		
+
+<h2 id="led-overview">LED Overview</h2>
+
+<p>Setting up our LED will consist of two parts:<br />
+the physical components, and the logical components</p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="led-physical-components"
+	
+	>
+		
+
+<h2 id="physical-components-brof-the-led-circuit">Physical Components <br />of the LED Circuit</h2>
+
+<p><img src="/arduino/media/images/slidecontent/binary-led-wiring-diagram.svg" alt="Output wiring diagram" height="550" /></p>
+
+<p>Set up your LED as in the diagram.</p>
+
+
+<aside class="notes">
+
+Set up your LED as in the diagram.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="led-logical-components"
+	
+	>
+		
+
+<h2 id="logical-components-brof-the-led-circuit">Logical Components <br />of the LED Circuit</h2>
+
+<ul class="flex-list">
+  <li><img src="/arduino/media/images/slidecontent/binary-led-nodered-inject.png" alt="Test Button" height="200" /><br />
+<strong>Test Button</strong><br />
+On-screen button, sends message<br />
+that light should turn on.</li>
+  <li><img src="/arduino/media/images/slidecontent/binary-led-nodered-arduino.png" alt="Arduino Out" height="200" /><br />
+<strong>Light Output</strong><br />
+Converts test button message<br />
+into an Arduino signal.</li>
+</ul>
+
+
+<aside class="notes">
+
+Check that your LED works by turning it on.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="led-out-node"
+	
+	>
+		
+
+<h2 id="pass-a-message-out-to-the-arduino">Pass a Message Out to the Arduino</h2>
+
+<p><img src="/arduino/media/images/slidecontent/binary-led-arduino-node.png" alt="LED Node Configuration" height="450" /></p>
+
+<p>Drag an <code>arduino out</code> node into your workspace and configure it.</p>
+
+
+<aside class="notes">
+
+Drag an `arduino out` node into your workspace and configure it.
+
+This will pass a message to the configured pin, but will not run automatically. We need to trigger it.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="led-inject-node"
+	
+	>
+		
+
+<h2 id="inject-a-message">Inject a Message</h2>
+
+<p><img src="/arduino/media/images/slidecontent/binary-led-inject-node.png" alt="Inject Node Configuration" height="450" /></p>
+
+<p>Drag an <code>inject</code> node into your workspace and configure it.</p>
+
+
+<aside class="notes">
+
+Drag an `inject` node into your workspace and configure it.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="led-join-nodes"
+	
+	>
+		
+
+<h2 id="connect-the-nodes">Connect the nodes</h2>
+
+<p><img src="/arduino/media/images/slidecontent/binary-led-join-nodes.png" alt="Inject Node Configuration" height="450" /></p>
+
+<p>Click and drag the small square on the <code>inject</code> node,<br />
+and attach it to the <code>arduino out</code> node.</p>
+
+
+<aside class="notes">
+
+Connect the two nodes.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="led-deploy"
+	
+	>
+		
+
+<h2 id="deploy-your-code">Deploy Your Code</h2>
+
+<p><img src="/arduino/media/images/slidecontent/nodered-deploy-code.png" alt="Deploying Node Red code to the Arduino" /></p>
+
+<p>Click the “Deploy” button in Node Red<br />
+to link your logic flow with the Arduino.</p>
+
+
+<aside class="notes">
+
+Drag an `inject` node into your workspace and configure it.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="output-test"
+	
+	>
+		
+
+<h2 id="test-the-led-output">Test the LED Output</h2>
+
+<p>Click the square trigger button on the <code>inject</code> node.</p>
+
+<p class="checkpoint">Your LED should turn on and stay on.</p>
+
+
+<aside class="notes">
+
+Check that your LED works by turning it on.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="button-overview"
+	
+	>
+		
+
+<h2 id="button-overview">Button Overview</h2>
+
+<p>Setting up our button will also consist of two parts:<br />
+the physical components, and the logical components</p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="button-physical-components"
+	
+	>
+		
+
+<h2 id="physical-components-brof-the-button-circuit">Physical Components <br />of the Button Circuit</h2>
+
+<p><img src="/arduino/media/images/slidecontent/binary-button-wiring-diagram.svg" alt="Output wiring diagram" height="550" /></p>
+
+<p>Set up your button as in the diagram.</p>
+
+
+<aside class="notes">
+
+Set up your button as in the diagram.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="button-logical-components"
+	
+	>
+		
+
+<h2 id="logical-components-brof-the-button-circuit">Logical Components <br />of the Button Circuit</h2>
+
+<ul class="flex-list">
+  <li><img src="/arduino/media/images/slidecontent/binary-button-nodered-arduino.png" alt="Arduino Out" height="200" /><br />
+<strong>Button Input</strong><br />
+Converts the Arduino signal<br />
+into a JavaScript message.</li>
+  <li><img src="/arduino/media/images/slidecontent/binary-button-nodered-debug.png" alt="Test Button" height="200" /><br />
+<strong>Debug Logger</strong><br />
+Displays the JS message on<br />
+the screen when received.</li>
+</ul>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="button-arduino-node"
+	
+	>
+		
+
+<h2 id="receive-a-message-from-the-arduino">Receive a Message from the Arduino</h2>
+
+<p><img src="/arduino/media/images/slidecontent/binary-button-arduino-node.png" alt="Button Input Node Configuration" height="450" /></p>
+
+<p>Drag an <code>arduino in</code> node into your workspace and configure it.</p>
+
+
+<aside class="notes">
+
+Drag an `arduino out` node into your workspace and configure it.
+
+This will pass a message to the configured pin, but will not run automatically. We need to trigger it.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="button-debug-node"
+	
+	>
+		
+
+<h2 id="debug-the-incoming-data">Debug the Incoming Data</h2>
+
+<p><img src="/arduino/media/images/slidecontent/binary-button-debug-node.png" alt="Button Debug Node Configuration" height="450" /></p>
+
+<p>Drag a <code>debug</code> node into your workspace and configure it.</p>
+
+
+<aside class="notes">
+
+Drag a `debug` node into your workspace and configure it.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="button-join-nodes"
+	
+	>
+		
+
+<h2 id="connect-the-nodes">Connect the nodes</h2>
+
+<p><img src="/arduino/media/images/slidecontent/binary-button-join-nodes.png" alt="Join Button Nodes" height="450" /></p>
+
+<p>Click and drag the small square on the <code>arduino</code> node,<br />
+and attach it to the <code>debug</code> node.</p>
+
+
+<aside class="notes">
+
+Connect the two nodes.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="button-code-deploy"
+	
+	>
+		
+
+<h2 id="deploy-your-code">Deploy Your Code</h2>
+
+<p><img src="/arduino/media/images/slidecontent/nodered-deploy-code.png" alt="Deploying Node Red code to the Arduino" /></p>
+
+<p>Click the “Deploy” button in Node Red<br />
+to link your logic flow with the Arduino.</p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="button-test"
+	
+	>
+		
+
+<h2 id="test-the-button-input">Test the Button Input</h2>
+
+<p>Press your button down and up again.</p>
+
+<p class="checkpoint">You should see the debug message in your browser.</p>
+
+
+<aside class="notes">
+
+Check that your LED works by turning it on.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="circuit-logical-components"
+	
+	>
+		
+
+<h2 id="logical-components-brof-the-whole-circuit">Logical Components <br />of the whole circuit</h2>
+
+<ul class="flex-list">
+  <li><img src="/arduino/media/images/slidecontent/binary-button-nodered-arduino.png" alt="Arduino In" height="200" /><br />
+<strong>Button Input</strong><br />
+Receives an Arduino signal<br />
+as a JavaScript message.</li>
+  <li><img src="/arduino/media/images/slidecontent/binary-circuit-nodered-function.png" alt="Function" height="200" /><br />
+<strong>Conversion Function</strong><br />
+Converts the button signal<br />
+into the correct message<br />
+for the LED.</li>
+  <li><img src="/arduino/media/images/slidecontent/binary-led-nodered-arduino.png" alt="Arduino Out" height="200" /><br />
+<strong>LED Output</strong><br />
+Sends the JavaScript message<br />
+as an Arduino signal.</li>
+</ul>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="circuit-arduino-nodes"
+	
+	>
+		
+
+<h2 id="circuit-arduino-nodes">Circuit Arduino Nodes</h2>
+
+<p><img src="/arduino/media/images/slidecontent/binary-circuit-arduino-nodes.png" alt="Full Circuit with Arduino Nodes" /></p>
+
+<p>Link the Arduino input and output directly.</p>
+
+<p class="checkpoint">The LED should be on when the button is pressed down.</p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="circuit-function-node"
+	
+	>
+		
+
+<h2 id="conversion-function">Conversion Function</h2>
+
+<p><img src="/arduino/media/images/slidecontent/binary-circuit-function-node.png" alt="Full Circuit with Function Node" /></p>
+
+<p>Link a function between the <code>in</code> node and the <code>out</code> node,<br />
+so we can manipulate the value being passed along.</p>
+
+
+<aside class="notes">
+
+Use a function to convert the button's voltage reading to an on/off message for the LED.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="circuit-function-code"
+	
+	>
+		
+
+<h2 id="function-code">Function Code</h2>
+
+<pre><code class="language-javascript">var buttonPressed = msg.payload;
+var lightOn = context.lightOn;
+
+if(lightOn === undefined) {
+    lightOn = false;
+}
+
+if(buttonPressed === true) {
+    if(lightOn === true) {
+      lightOn = false;
+    } else {
+      lightOn = true;
+    }
+}
+
+context.lightOn = lightOn;
+msg.payload = lightOn;
+
+return msg;
+</code></pre>
+
+<p>Paste this code into your <code>function</code> config popup,<br />
+in the code editor section.</p>
+
+
+<aside class="notes">
+
+We can use the `context` object to store data between function calls.
+This allows us to toggle on/off with the button.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="circuit-function-code-shorter"
+	
+	>
+		
+
+<h2 id="shorter-function-code">Shorter Function Code</h2>
+
+<pre><code class="language-javascript">var buttonPressed = msg.payload;
+var lightOn = context.lightOn || false;
+
+if(buttonPressed) {
+    lightOn = !lightOn;
+}
+
+context.lightOn = lightOn;
+msg.payload = lightOn;
+
+return msg;
+</code></pre>
+<p><strong>For experienced coders:</strong><br />
+This code does exactly the same thing,<br />
+but is a bit shorter.</p>
+
+
+<aside class="notes">
+
+We can use the `context` object to store the state.
+This allows us to toggle on/off with the button.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="circuit-deploy"
+	
+	>
+		
+
+<h2 id="deploy-your-code">Deploy Your Code</h2>
+
+<p><img src="/arduino/media/images/slidecontent/nodered-deploy-code.png" alt="Deploying Node Red code to the Arduino" /></p>
+
+<p>Click the “Deploy” button in Node Red<br />
+to link your logic flow with the Arduino.</p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="circuit-test"
+	
+	>
+		
+
+<h2 id="test-your-circuit">Test your circuit</h2>
+
+<p>Your button should now act like an on/off switch</p>
+
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="challenge"
+	
+	>
+		
+
+<p><img src="/arduino/media/images/slidecontent/binary-traffic-light.gif" alt="Binary Traffic Light" /></p>
+
+<h2 id="challenge-stop-and-go">Challenge: Stop and Go</h2>
+
+<p>Add a green LED to your circuit to make a stop/go light.</p>
+
+
+<aside class="notes">
+
+Add another LED to your circuit to make a stop/go light.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="summary"
+	
+	>
+		
+
+<p><img src="/arduino/theme/assets/images/thumbs-up.svg" alt="Thumbs Up!" height="200" /></p>
+
+<h2 id="binary-blink-complete">Binary Blink: Complete!</h2>
+
+<p>Cool, now let’s try something a little more complex…</p>
+
+<p><a href="spectrum">Take me to the next chapter!</a></p>
+
+
+<aside class="notes">
+
+Cool, now let's try something a little more complex...
+
+</aside>
+
+</section>
+
+
+
+
+				</div>
+
+			</div><!-- .reveal -->
+
+
+
+
+			<div class="sidenotes">
+				<div class="content">
+					<!-- display notes here using js -->
+					<p>Loading...</p>
+				</div>
+			</div>
+
+		</div><!-- .slideshow -->
+			
+		<div class="page-content">
+
+
+
+
+		</div>
+
+
+
+		<script src="/arduino/theme/assets/submodules/revealjs/lib/js/head.min.js"></script>
+<script src="/arduino/theme/assets/submodules/revealjs/js/reveal.min.js"></script>
+
+<script>
+
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: '/arduino/theme/assets/submodules/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			/*{ src: '/arduino/assets/submodules/revealjs/plugin/markdown/marked.js' },
+			{ src: '/arduino/assets/submodules/revealjs/plugin/markdown/markdown.js' },*/
+			{ src: '/arduino/theme/assets/submodules/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: '/arduino/theme/assets/submodules/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: '/arduino/theme/assets/submodules/sidenotes/sidenotes.js' }
+			/*{ src: '/arduino/assets/submodules/prism/prism.js', callback: function() { Prism.highlightAll() }}*/
+		]
+	});
+    
+    function checkNotesState() {
+
+	    // show the notes on page load if notesByDefault has been 
+	    // set to true in the page's front matter.
+	    
+	      var notesByDefault = false;
+	    
+
+	    if(notesByDefault == true) {
+	    	Sidenotes.showNotes();
+	    }
+	}
+
+	
+		
+
+</script>
+
+		<script>
+
+		// adds a class 'codeblock-title' to the paragraph element
+		// directly preceding any '.highlight' code block.
+		// the title is used to give instructions on where to place
+		// the code from the code block.
+		$(document).ready( function(){
+
+			$('.highlight').prev('p').addClass('codeblock-title');
+			
+		});
+
+
+		// checkpoints are able to be clicked to go to the next slide.
+		// when clicked they also visibly update to a green style.
+		$(document).ready( function() {
+			Reveal.addEventListener( 'ready', function( event ) {
+    			
+    			$('.checkpoint').click( function(){
+					$(this).addClass('checked');
+					setTimeout( Reveal.next, 1000 );
+				});
+
+			});
+		});
+
+		</script>
+
+	</body>
+</html>

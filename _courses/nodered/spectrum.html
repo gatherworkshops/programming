@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Spectrum Spinner</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- google translate - language identifier -->
+        <meta name="google-translate-customization" content="a148a80643fbe5d7-b9de7b0f0180d6d8-g318479cea978092f-2b"></meta>
+
+        <!-- Bootstrap -->
+        <link href="/arduino/theme/assets/submodules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="/arduino/assets/submodules/jquery/jquery-1.11.2.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/arduino/theme/assets/submodules/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Custom Fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+
+        <!-- revealjs for slideshows -->
+        <link rel="stylesheet" href="/arduino/theme/assets/submodules/revealjs/css/reveal.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/arduino/theme/assets/css/styles.css">
+
+        <!-- Prism -->
+        <link rel="stylesheet" href="/arduino/theme/assets/submodules/prism/prism.css">
+        <script src="/arduino/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/arduino/favicon.ico">
+
+    </head>
+
+    <body class=" hello">
+<nav id="mainNavigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container-fluid">
+  
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="/arduino/">
+      	<img class="avatar" src="/arduino/theme/assets/images/gw-avatar.png">
+      	Electronics with Arduino 
+        <span class="title"> | </span>
+      </a>
+
+      
+        <span class="navbar-brand title"> Spectrum Spinner </span>
+      
+
+    </div>
+
+
+    
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+      <ul class="site-nav nav navbar-nav">
+
+      	
+
+  			<!-- page -->
+  			
+  			
+
+		    
+
+			<li class="">
+				<a href="/arduino//">Home</a>
+			</li>
+
+		
+
+  			<!-- page -->
+  			
+  			
+
+		    
+
+			<li class="">
+				<a href="/arduino/courses/taster">Taster</a>
+			</li>
+
+		
+
+  			<!-- page -->
+  			
+  			
+
+		    
+
+			<li class="">
+				<a href="/arduino/courses/workshop">Workshop</a>
+			</li>
+
+		
+
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+
+		<div class="slideshow">
+
+			<div class="reveal">
+
+				<!-- Any section element inside of this container is displayed as a slide -->
+				<div class="slides">
+
+
+
+
+
+<!-- slide -->
+<section class="title-slide"
+		
+	
+		id=""
+		data-background="/arduino/media/images/theme/theme-tile.svg" 
+		data-background-color="#8E0E00"
+		data-background-size="200px" 
+		data-background-repeat="repeat"
+	
+	>
+		
+
+<p><img src="/arduino/theme/assets/images/gw_logo.png" alt="Gather Workshops Logo" /></p>
+
+<h1 id="spectrum-spinner">Spectrum Spinner</h1>
+<p><em>All the colours of the rainbow.</em></p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="overview"
+	
+	>
+		
+
+<p><img src="/arduino/media/images/slidecontent/spectrum-demo.gif" alt="RGB LED" /></p>
+
+<h2 id="what-we-are-making">What We Are Making</h2>
+
+<p>Change the colour of a light by turning a dial.</p>
+
+
+<aside class="notes">
+Change the colour of a light by turning a dial.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="hardware"
+	
+	>
+		
+
+<h2 id="bits-we-need">Bits We Need</h2>
+
+<ul class="flex-list">
+  <li><img src="/arduino/media/images/slidecontent/arduino-led-rgb.svg" alt="RGB LED" height="200" /><br />
+<strong>RGB LED</strong><br />
+A visual output for our circuit</li>
+  <li><img src="/arduino/media/images/slidecontent/arduino-potentiometer.svg" alt="Button" height="200" /><br />
+<strong>Potentiometer</strong><br />
+A dial which outputs a range of values</li>
+  <li><img src="/arduino/media/images/slidecontent/arduino-resistor-330ohm.svg" alt="10k Ohm Resistor" height="200" /><br />
+<strong>3x 330Ω Resistor</strong><br />
+To regulate the voltage to the LED</li>
+  <li><img src="/arduino/media/images/slidecontent/arduino-wire.svg" alt="Wire" height="200" /><br />
+<strong>Wires</strong><br />
+To connect everything together!</li>
+</ul>
+
+
+<aside class="notes">
+
+RGB LED, Button, Wires
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="led-overview"
+	
+	>
+		
+
+<h2 id="led-overview">LED Overview</h2>
+
+<p>Setting up our LED will once again consist of two parts:<br />
+the physical components, and the logical components</p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="info-sheet-slide"
+		
+	
+		id="led-info-sheet"
+	
+	>
+		
+
+<p><img src="/arduino/media/images/slidecontent/spectrum-led-info-diagram.svg" alt="RGB LED Diagram" height="450" /></p>
+
+<h2 id="rbg-leds">RBG LEDs</h2>
+
+<p>This LED can display a range of colours <br />
+by mixing together levels of red, green and blue.</p>
+
+<p>It has four pins: Red, Earth, Green, and Blue.</p>
+
+<p>It requires 330 ohm resistors for each colour pin,<br />
+to keep values sent to the pins from interfering<br />
+with each other.</p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="led-physical-components"
+	
+	>
+		
+
+<h2 id="physical-components-brof-the-led-circuit">Physical Components <br />of the LED Circuit</h2>
+
+<p><img src="/arduino/media/images/slidecontent/spectrum-led-wiring-diagram.svg" alt="Output wiring diagram" height="550" /></p>
+
+<p>Set up your LED as in the diagram.</p>
+
+
+<aside class="notes">
+
+Set up your LED as in the diagram.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="led-logical-components"
+	
+	>
+		
+
+<h2 id="logical-components-brof-the-led-circuit">Logical Components <br />of the LED Circuit</h2>
+
+<ul class="flex-list">
+  <li><img src="/arduino/media/images/slidecontent/spectrum-led-nodered-inject.png" alt="Test Buttons" height="200" /><br />
+<strong>Test Buttons</strong><br />
+On-screen buttons, one for each <br />
+LED colour component.</li>
+  <li><img src="/arduino/media/images/slidecontent/spectrum-led-nodered-arduino-out.png" alt="Arduino Outputs" height="200" /><br />
+<strong>Light Output</strong><br />
+One Arduino pin output for each<br />
+LED colour component.</li>
+</ul>
+
+
+<aside class="notes">
+
+Check that your LED works by turning it on.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="led-out-node"
+	
+	>
+		
+
+<h2 id="pass-a-message-out-to-the-arduino">Pass a Message Out to the Arduino</h2>
+
+<p><img src="/arduino/media/images/slidecontent/spectrum-led-arduino-node.png" alt="LED Node Configuration" height="450" /></p>
+
+<p>Drag an <code>arduino out</code> node into your workspace and configure it.</p>
+
+
+<aside class="notes">
+
+Drag an `arduino out` node into your workspace and configure it.
+
+This will pass a message to the configured pin, but will not run automatically. We need to trigger it.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="led-inject-node"
+	
+	>
+		
+
+<h2 id="inject-a-message">Inject a Message</h2>
+
+<p><img src="/arduino/media/images/slidecontent/spectrum-led-inject-node.png" alt="Inject Node Configuration" height="450" /></p>
+
+<p>Drag an <code>inject</code> node into your workspace and configure it.</p>
+
+
+<aside class="notes">
+
+Drag an `inject` node into your workspace and configure it.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="led-join-nodes"
+	
+	>
+		
+
+<h2 id="connect-the-nodes">Connect the nodes</h2>
+
+<p><img src="/arduino/media/images/slidecontent/spectrum-led-join-nodes.png" alt="Inject Node Configuration" height="450" /></p>
+
+<p>Click and drag the small square on the <code>inject</code> node,<br />
+and attach it to the <code>arduino out</code> node.</p>
+
+
+<aside class="notes">
+
+Connect the two nodes.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="led-deploy"
+	
+	>
+		
+
+<h2 id="deploy-your-code">Deploy Your Code</h2>
+
+<p><img src="/arduino/media/images/slidecontent/nodered-deploy-code.png" alt="Deploying Node Red code to the Arduino" /></p>
+
+<p>Click the “Deploy” button in Node Red<br />
+to link your logic flow with the Arduino.</p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="led-test"
+	
+	>
+		
+
+<h2 id="test-the-led-output">Test the LED Output</h2>
+
+<p>Click the square trigger button on the <code>inject</code> node.</p>
+
+<p class="checkpoint">Your LED should turn red.</p>
+
+
+<aside class="notes">
+
+Check that your LED works by turning it on.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="led-all-colours-test"
+	
+	>
+		
+
+<h2 id="test-green-and-blue">Test Green and Blue</h2>
+
+<p><img src="/arduino/media/images/slidecontent/spectrum-led-all-colors-test.png" alt="Multiple Inject Nodes" height="450" /></p>
+
+<p>Add two more flows to test the green and blue.</p>
+
+<p class="checkpoint">The test buttons should all work correctly.</p>
+
+
+<aside class="notes">
+
+Check that your LED works by turning it on.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="potentiometer-overview"
+	
+	>
+		
+
+<h2 id="potentiometer-overview">Potentiometer Overview</h2>
+
+<p>Setting up our potentiometer will also consist of two parts:<br />
+the physical components, and the logical components</p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="potentiometer-physical-components"
+	
+	>
+		
+
+<h2 id="physical-components-brof-the-potentiometer-circuit">Physical Components <br />of the Potentiometer Circuit</h2>
+
+<p><img src="/arduino/media/images/slidecontent/spectrum-potentiometer-wiring-diagram.svg" alt="Potentiometer wiring diagram" height="550" /></p>
+
+<p>Set up your potentiometer as in the diagram.</p>
+
+
+<aside class="notes">
+
+Set up your potentiometer as in the diagram.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="potentiometer-logical-components"
+	
+	>
+		
+
+<h2 id="logical-components-brof-the-potentiometer-circuit">Logical Components <br />of the Potentiometer Circuit</h2>
+
+<ul class="flex-list">
+  <li><img src="/arduino/media/images/slidecontent/spectrum-potentiometer-nodered-arduino.png" alt="Arduino In" height="200" /><br />
+<strong>Potentiometer Input</strong><br />
+Converts the Arduino signal<br />
+into a JavaScript message.</li>
+  <li><img src="/arduino/media/images/slidecontent/spectrum-potentiometer-nodered-debug.png" alt="Debug Node" height="200" /><br />
+<strong>Debug Logger</strong><br />
+Displays the JS message on<br />
+the screen when received.</li>
+</ul>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="potentiometer-arduino-node"
+	
+	>
+		
+
+<h2 id="receive-a-message-from-the-arduino">Receive a Message from the Arduino</h2>
+
+<p><img src="/arduino/media/images/slidecontent/spectrum-potentiometer-arduino-node.png" alt="Button Input Node Configuration" height="450" /></p>
+
+<p>Drag an <code>arduino in</code> node into your workspace and configure it.</p>
+
+
+<aside class="notes">
+
+Drag an `arduino out` node into your workspace and configure it.
+
+This will pass a message to the configured pin, but will not run automatically. We need to trigger it.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="potentiometer-debug-node"
+	
+	>
+		
+
+<h2 id="debug-the-incoming-data">Debug the Incoming Data</h2>
+
+<p><img src="/arduino/media/images/slidecontent/spectrum-potentiometer-debug-node.png" alt="Button Debug Node Configuration" height="450" /></p>
+
+<p>Drag a <code>debug</code> node into your workspace. The default configuration is fine.</p>
+
+
+<aside class="notes">
+
+Drag a `debug` node into your workspace and configure it.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="potentiometer-join-nodes"
+	
+	>
+		
+
+<h2 id="connect-the-nodes">Connect the nodes</h2>
+
+<p><img src="/arduino/media/images/slidecontent/spectrum-potentiometer-join-nodes.png" alt="Join potentiometer Nodes" height="450" /></p>
+
+<p>Join your <code>arduino</code> node to your <code>debug</code> node.</p>
+
+
+<aside class="notes">
+
+Connect the two nodes.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="potentiometer-code-deploy"
+	
+	>
+		
+
+<h2 id="deploy-your-code">Deploy Your Code</h2>
+
+<p><img src="/arduino/media/images/slidecontent/nodered-deploy-code.png" alt="Deploying Node Red code to the Arduino" /></p>
+
+<p>Click the “Deploy” button in Node Red<br />
+to link your logic flow with the Arduino.</p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="potentiometer-test"
+	
+	>
+		
+
+<h2 id="test-the-potentiometer-input">Test the potentiometer input</h2>
+
+<p>Turn the dial on your potentiometer.</p>
+
+<p class="checkpoint">You should see value being logged in your debug panel.</p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="circuit-logical-components"
+	
+	>
+		
+
+<h2 id="logical-components-brof-the-whole-circuit">Logical Components <br />of the whole circuit</h2>
+
+<ul class="flex-list">
+  <li><img src="/arduino/media/images/slidecontent/spectrum-potentiometer-nodered-arduino.png" alt="Arduino In" height="200" /><br />
+<strong>Potentiometer Input</strong><br />
+Receives an Arduino signal<br />
+as a JavaScript message.</li>
+  <li><img src="/arduino/media/images/slidecontent/spectrum-circuit-nodered-function.png" alt="Function" height="200" /><br />
+<strong>Conversion Function</strong><br />
+Converts the potentiometer signal into the correct message for the LED.</li>
+  <li><img src="/arduino/media/images/slidecontent/spectrum-led-nodered-arduino-out.png" alt="Arduino Outputs" height="200" /><br />
+<strong>LED Outputs</strong><br />
+Sends the JavaScript message<br />
+as an Arduino signal.</li>
+</ul>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="circuit-arduino-nodes"
+	
+	>
+		
+
+<h2 id="circuit-arduino-nodes">Circuit Arduino Nodes</h2>
+
+<p><img src="/arduino/media/images/slidecontent/spectrum-circuit-all-nodes.png" alt="Full Circuit with all nodes" /></p>
+
+<p>Link your <code>arduino input</code> to the three <code>arduino output</code> nodes<br />
+via a <code>function</code>, like we did last time.</p>
+
+<p>This time your function requires three outputs instead of one.</p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="circuit-function-code"
+	
+	>
+		
+
+<h2 id="function-code">Function Code</h2>
+
+<pre><code class="language-javascript">var dialValue = msg.payload;
+var redOn = false;
+var greenOn = false;
+var blueOn = false;
+
+if(dialValue &lt; 300){
+    redOn = true;
+} else if(dialValue &gt; 900) {
+    blueOn = true;
+} else {
+    greenOn = true;
+}
+
+var redMessage = { payload: redOn };
+var greenMessage = { payload: greenOn };
+var blueMessage = { payload: blueOn };
+
+return [redMessage, greenMessage, blueMessage];
+</code></pre>
+
+<p>Paste this code into your <code>function</code> config popup,<br />
+in the code editor section.</p>
+
+
+<aside class="notes">
+
+We don't need to store the state this time.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="circuit-function-code-shorter"
+	
+	>
+		
+
+<h2 id="shorter-function-code">Shorter Function Code</h2>
+
+<pre><code class="language-javascript">var dialPosition = msg.payload;
+
+var messages = [
+    {payload: (dialPosition &lt;= 300)}, // red
+    {payload: (dialPosition &gt; 300 &amp;&amp; dialPosition &lt; 900)}, // green
+    {payload: (dialPosition &gt;= 900)} //blue
+]
+
+return messages;
+</code></pre>
+<p><strong>For experienced coders:</strong><br />
+This code does exactly the same thing,<br />
+but is a bit shorter.</p>
+
+
+<aside class="notes">
+
+We don't need to store the state this time.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="circuit-deploy"
+	
+	>
+		
+
+<h2 id="deploy-your-code">Deploy Your Code</h2>
+
+<p><img src="/arduino/media/images/slidecontent/nodered-deploy-code.png" alt="Deploying Node Red code to the Arduino" /></p>
+
+<p>Click the “Deploy” button in Node Red<br />
+to link your logic flow with the Arduino.</p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="circuit-test"
+	
+	>
+		
+
+<h2 id="full-circuit-test">Full Circuit Test</h2>
+
+<p>Turn the dial to change the colour of your LED.</p>
+
+<p class="checkpoint">Your potentiometer should now act like a colour picker.</p>
+
+
+<aside class="notes">
+
+:)
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id="challenge"
+	
+	>
+		
+
+<p><img src="/arduino/media/images/slidecontent/spectrum-cat.gif" alt="Spectrum Mood Light" height="350" /></p>
+
+<h2 id="challenge-mood-lighting">Challenge: Mood Lighting</h2>
+
+<p>Modify the conversion function to output 5 or more colours.</p>
+
+<p><strong>Bonus points:</strong> Fade the LED through a continuous spectrum.</p>
+
+
+<aside class="notes">
+
+Add another LED to your circuit to make a stop/go light.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class="centered-slide"
+		
+	
+		id="summary"
+	
+	>
+		
+
+<p><img src="/arduino/theme/assets/images/thumbs-up.svg" alt="Thumbs Up!" height="200" /></p>
+
+<h2 id="spectrum-spinner-complete">Spectrum Spinner: Complete!</h2>
+
+<p>Yay, onwards to the next adventure…</p>
+
+<p><a href="accelerator">Take me to the next chapter!</a></p>
+
+
+<aside class="notes">
+
+Cool, now let's try something a little more complex...
+
+</aside>
+
+</section>
+
+
+
+
+				</div>
+
+			</div><!-- .reveal -->
+
+
+
+
+			<div class="sidenotes">
+				<div class="content">
+					<!-- display notes here using js -->
+					<p>Loading...</p>
+				</div>
+			</div>
+
+		</div><!-- .slideshow -->
+			
+		<div class="page-content">
+
+
+
+
+		</div>
+
+
+
+		<script src="/arduino/theme/assets/submodules/revealjs/lib/js/head.min.js"></script>
+<script src="/arduino/theme/assets/submodules/revealjs/js/reveal.min.js"></script>
+
+<script>
+
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: '/arduino/theme/assets/submodules/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			/*{ src: '/arduino/assets/submodules/revealjs/plugin/markdown/marked.js' },
+			{ src: '/arduino/assets/submodules/revealjs/plugin/markdown/markdown.js' },*/
+			{ src: '/arduino/theme/assets/submodules/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: '/arduino/theme/assets/submodules/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: '/arduino/theme/assets/submodules/sidenotes/sidenotes.js' }
+			/*{ src: '/arduino/assets/submodules/prism/prism.js', callback: function() { Prism.highlightAll() }}*/
+		]
+	});
+    
+    function checkNotesState() {
+
+	    // show the notes on page load if notesByDefault has been 
+	    // set to true in the page's front matter.
+	    
+	      var notesByDefault = false;
+	    
+
+	    if(notesByDefault == true) {
+	    	Sidenotes.showNotes();
+	    }
+	}
+
+	
+		
+
+</script>
+
+		<script>
+
+		// adds a class 'codeblock-title' to the paragraph element
+		// directly preceding any '.highlight' code block.
+		// the title is used to give instructions on where to place
+		// the code from the code block.
+		$(document).ready( function(){
+
+			$('.highlight').prev('p').addClass('codeblock-title');
+			
+		});
+
+
+		// checkpoints are able to be clicked to go to the next slide.
+		// when clicked they also visibly update to a green style.
+		$(document).ready( function() {
+			Reveal.addEventListener( 'ready', function( event ) {
+    			
+    			$('.checkpoint').click( function(){
+					$(this).addClass('checked');
+					setTimeout( Reveal.next, 1000 );
+				});
+
+			});
+		});
+
+		</script>
+
+	</body>
+</html>
