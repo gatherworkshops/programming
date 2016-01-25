@@ -21,8 +21,6 @@ sass:
 
 # custom collections
 collections:
-  assets:
-    output: true
   courses:
     output: true
     layout: chapter
