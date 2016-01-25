@@ -1,0 +1,56 @@
+---
+layout: workshop
+title: Robotics with mBot
+course: workshop
+
+standard: Pre-NCEA
+heading: Robotics with mBot
+tagline: AS-91073 Create a complex computer program for a specified purpose
+
+studentsurvey: undefined
+teachersurvey: undefined
+
+chapters:
+
+    - name: welcome
+      subtitle: Course Intro
+      title: Welcome
+
+    - name: motion
+      subtitle: Chapter One
+      title: Basic Motions
+
+    - name: features
+      subtitle: Chapter Two
+      title: More features 
+      
+    - name: ifelse
+      subtitle: Chapter Three
+      title: Making Choices 
+      
+    - name: sensors
+      subtitle: Chapter Five
+      title: Using Sensors
+      
+    - name: remote
+      subtitle: Chapter Six
+      title: Remote Control Programming
+      
+    - name: selfdriving
+      subtitle: Chapter Seven
+      title: Self Driving Robot
+---
+
+<div class="row">
+
+    {% for chapter in page.chapters %}
+
+
+        {% include chapter-tile.html %}
+
+
+    {% endfor %}
+
+</div>
+
+
