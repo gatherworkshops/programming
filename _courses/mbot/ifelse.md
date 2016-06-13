@@ -1,5 +1,5 @@
 ---
-layout: chapter
+layout: default
 title: If/Else Statements
 course: workshop
 
@@ -41,7 +41,7 @@ slides:
 
 
       ## Operators
-      ![Basic Motions]([[BASE_URL]]/media/images/slidecontent/operators.jpg){: height="250" width="400"}
+      ![Basic Motions](assets/images/operators.jpg){: height="250" width="400"}
       Operators are used to make comparisons.
       Eg: if(age < 18) then you are underage.   
     notes: |
@@ -65,7 +65,7 @@ slides:
 
 
       ## Timer
-      ![Control commands]([[BASE_URL]]/media/images/slidecontent/timer if.jpg){: height="250" width="400"}
+      ![Control commands](assets/images/timer if.jpg){: height="250" width="400"}
       This is an example of an **If** statement. 
       The **timer** block counts the time from the start of your program. 
       What happens in this program?
@@ -85,7 +85,7 @@ slides:
       
 
       ## If/Else
-      ![Control commands]([[BASE_URL]]/media/images/slidecontent/ifelse.jpg){: height="250" width="400"}
+      ![Control commands](assets/images/ifelse.jpg){: height="250" width="400"}
       Else can also be used in your if statement.
       **If** traffic light is green, go **Else**(otherwise), stop. 
       
@@ -105,7 +105,7 @@ slides:
       
 
       ## If/Else
-      ![Control commands]([[BASE_URL]]/media/images/slidecontent/timerelse.jpg){: height="250" width="400"}
+      ![Control commands](assets/images/timerelse.jpg){: height="250" width="400"}
       Using an **if/else** statement with **timer**
       What happens in this program?
       Try this yourself.

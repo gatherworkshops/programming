@@ -1,6 +1,5 @@
 ---
-layout: chapter
-bodyclass: chapter
+layout: default
 title: Welcome
 course: cs4hs
 

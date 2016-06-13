@@ -1,5 +1,5 @@
 ---
-layout: chapter
+layout: default
 bodyclass: chapter
 title: User Interaction
 course: levelthree
@@ -14,8 +14,6 @@ slides:
       :)
 
     content: |
-
-      ![Gather Workshops Logo]([[BASE_URL]]/assets/images/gw_logo.png)
 
       # User Interaction
       _Reacting to interface events_
@@ -74,13 +72,13 @@ slides:
 
       The most common types of events are:
 
-      - ![A Computer Mouse]([[BASE_URL]]/media/images/icons/mouse.svg){: height="150"}
+      - ![A Computer Mouse](assets/images/mouse.svg){: height="150"}
         **Mouse Events**
         click, move, hover
-      - ![Gaming Keys]([[BASE_URL]]/media/images/icons/gaming-keys.svg){: height="150"}
+      - ![Gaming Keys](assets/images/gaming-keys.svg){: height="150"}
         **Keyboard Events**
         key down, key up
-      - ![Resizing A Window]([[BASE_URL]]/media/images/icons/resize.svg){: height="150"}
+      - ![Resizing A Window](assets/images/resize.svg){: height="150"}
         **Change Events**
         resize, select, focus
       {: .flex-list}
@@ -255,7 +253,7 @@ slides:
 
     content: |
 
-      ![Thumbs Up!]([[BASE_URL]]/assets/images/thumbs-up.svg){: height="200" }
+      ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200" }
 
       ## User Interaction: Complete!
 

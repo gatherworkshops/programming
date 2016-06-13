@@ -1,5 +1,5 @@
 ---
-layout: chapter
+layout: default
 title: Skills Review
 course: levelthree
 
@@ -13,8 +13,6 @@ slides:
       :)
 
     content: |
-
-      ![Gather Workshops Logo]([[BASE_URL]]/assets/images/gw_logo.png)
 
       # Skills Review
       _What we (should) already know_
@@ -162,7 +160,7 @@ slides:
     class: centered-slide
     content: |
       
-      ![Burger]([[BASE_URL]]/media/images/icons/burger.svg){: height="200"}
+      ![Burger](assets/images/burger.svg){: height="200"}
 
       ## Challenge: <br>Debug the Burger Builder
 
@@ -185,7 +183,7 @@ slides:
 
     content: |
 
-      ![Thumbs Up!]([[BASE_URL]]/assets/images/thumbs-up.svg){: height="200"}
+      ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200"}
 
       ## Skills Review: Complete!
 

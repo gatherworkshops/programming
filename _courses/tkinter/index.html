@@ -1,5 +1,5 @@
 ---
-layout: workshop
+layout: default
 title: Apps with TkInter
 course: tkinter
 
@@ -10,43 +10,55 @@ tagline: AS-91073 Create a complex computer program for a specified purpose
 studentsurvey: https://gather.typeform.com/to/m3cJsR
 teachersurvey: https://gather.typeform.com/to/rLqMQK
 
-quests:
-    
-    - name: unknown
-      subtitle: Quest One
-      title: Quest One
+chapters: 
+
+  - name: welcome
+    subtitle: Course Intro
+    title: Welcome
+    description: Course plan and intro
+
+  - name: review
+    subtitle: Chapter One
+    title: Skills Review
+    description: What we already know
+
+  - name: gui
+    subtitle: Chapter Two
+    title: Graphical Widgets
+    description: Available Tkinter Widgets
+
+  - name: layouts
+    subtitle: Chapter Three
+    title: Layouts
+    description: Using The Grid Manager
+
+  - name: events
+    subtitle: Chapter Four
+    title: Interaction
+    description: Mouse and Keyboard Events
+
+  - name: data
+    subtitle: Chapter Five
+    title: Data Management
+    description: Classes and Complex Data
+    published: false
+
+  - name: planning
+    subtitle: Chapter Six
+    title: Planning
+    description: Coming Soon
+    published: false
+
+  - name: building
+    subtitle: Chapter Seven
+    title: Build and Test
+    description: Coming Soon
+    published: false
+
+  - name: submission
+    subtitle: Chapter Eight
+    title: Submission
+    description: Coming Soon
+    published: false
     
 ---
-
-<div class="row">
-
-    {% for chapter in site.data.courses[page.course] %}
-
-
-        {% include chapter-tile.html %}
-
-
-    {% endfor %}
-
-</div>
-
-
-
-
-<!--div class="row">
-    <div class="col-md-12">
-        <h2 class="break">Extra Quests for the Curious...</h2>
-    </div>
-</div-->
-
-<!--div class="row curiosity-quests">
-
-    {% for tiledata in page.quests %}
-
-        {% include chapter-tile.html %}
-
-    {% endfor %}
-
-</div-->
-
-

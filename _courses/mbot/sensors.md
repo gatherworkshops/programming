@@ -1,5 +1,5 @@
 ---
-layout: chapter
+layout: default
 title: Light Sensors
 course: workshop
 
@@ -28,7 +28,7 @@ slides:
 
 
       ## Loop Control
-      ![Loops ]([[BASE_URL]]/media/images/slidecontent/sensor1.jpg){: height="250" width="400"}
+      ![Loops ](assets/images/sensor1.jpg){: height="250" width="400"}
       Do you remember if/else/forever loops?
       We will need them for this chapter! 
     notes: |
@@ -46,7 +46,7 @@ slides:
       
 
       ## Operators
-      ![Operators]([[BASE_URL]]/media/images/slidecontent/operators.jpg){: height="300" width="450"}
+      ![Operators](assets/images/operators.jpg){: height="300" width="450"}
       Do you remember operators?
       They are used to perform comparisons. Eg: 4 < 5
 
@@ -62,7 +62,7 @@ slides:
 
       ## Reading Temperature 
 
-      ![Example]([[BASE_URL]]/media/images/slidecontent/sensor3.jpg){: height="250" width="400"}
+      ![Example](assets/images/sensor3.jpg){: height="250" width="400"}
       What will happen in this program?
       You will use a similar statement to this in the next challenge. 
     notes: |

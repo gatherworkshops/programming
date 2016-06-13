@@ -1,5 +1,5 @@
 ---
-layout: chapter
+layout: default
 title: Data Management
 course: levelthree
 
@@ -13,8 +13,6 @@ slides:
       :)
 
     content: |
-
-      ![Gather Workshops Logo]([[BASE_URL]]/assets/images/gw_logo.png)
 
       # Data Management
       _Classes and Dynamic Lists_
@@ -44,7 +42,7 @@ slides:
 
     content: |
 
-      ![Thumbs Up!]([[BASE_URL]]/assets/images/thumbs-up.svg){: height="200" }
+      ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200" }
 
       ## Data Management: Complete!
 

@@ -1,5 +1,5 @@
 ---
-layout: chapter
+layout: default
 title: Build and Test
 course: levelthree
 
@@ -13,8 +13,6 @@ slides:
       :)
 
     content: |
-
-      ![Gather Workshops Logo]([[BASE_URL]]/assets/images/gw_logo.png)
 
       # Build and Test
       _Coding your app to meet the brief_
@@ -55,7 +53,7 @@ slides:
 
     content: |
 
-      ![Thumbs Up!]([[BASE_URL]]/assets/images/thumbs-up.svg){: height="200" }
+      ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200" }
 
       ## Build and Test: Complete!
 

@@ -1,5 +1,5 @@
 ---
-layout: chapter
+layout: default
 title: Planning
 course: levelthree
 
@@ -13,8 +13,6 @@ slides:
       :)
 
     content: |
-
-      ![Gather Workshops Logo]([[BASE_URL]]/assets/images/gw_logo.png)
 
       # Planning
       _Creating a plan for your app_
@@ -58,7 +56,7 @@ slides:
 
     content: |
 
-      ![Thumbs Up!]([[BASE_URL]]/assets/images/thumbs-up.svg){: height="200" }
+      ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200" }
 
       ## Planning: Complete!
 

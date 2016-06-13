@@ -1,5 +1,5 @@
 ---
-layout: chapter
+layout: default
 title: Welcome
 course: levelthree
 
@@ -19,8 +19,6 @@ slides:
       By the end of the workshop you will have coded and published a selection of small interactive code demos.
 
     content: |
-
-      ![Gather Workshops Logo]([[BASE_URL]]/assets/images/gw_logo.png)
 
       # Computer Programming
       _Level 3: Create a complex computer program for a specified task_
@@ -123,7 +121,7 @@ slides:
 
     content: |
 
-      ![Python Logo]([[BASE_URL]]/media/images/slidecontent/python.svg){: height="200"}
+      ![Python Logo](assets/images/python.svg){: height="200"}
 
       ## Python 3
 
@@ -143,7 +141,7 @@ slides:
 
     content: |
 
-      ![PyCharm Logo]([[BASE_URL]]/media/images/slidecontent/pycharm.png){: height="200"}
+      ![PyCharm Logo](assets/images/pycharm.png){: height="200"}
 
       ## PyCharm Edu
 
@@ -166,7 +164,7 @@ slides:
 
       Download and unzip the starter code for this workshop.
 
-      [Download Link]([[BASE_URL]]/media/zip/pythonchallenges.zip){: target="_blank"}
+      [Download Link](assets/zip/pythonchallenges.zip){: target="_blank"}
 
 ##########
 
@@ -180,7 +178,7 @@ slides:
 
     content: |
 
-      ![Thumbs Up!]([[BASE_URL]]/assets/images/thumbs-up.svg){: height="200"}
+      ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200"}
 
       ## Intro Stuff: Complete!
 

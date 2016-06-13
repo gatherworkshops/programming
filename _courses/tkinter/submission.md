@@ -1,5 +1,5 @@
 ---
-layout: chapter
+layout: default
 title: Submission
 course: levelthree
 
@@ -13,8 +13,6 @@ slides:
       :)
 
     content: |
-
-      ![Gather Workshops Logo]([[BASE_URL]]/assets/images/gw_logo.png)
 
       # Submission
       _Packaging your work for marking_
@@ -58,7 +56,7 @@ slides:
 
     content: |
 
-      ![Thumbs Up!]([[BASE_URL]]/assets/images/thumbs-up.svg){: height="200" }
+      ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200" }
 
       ## Submission: Complete!
 
