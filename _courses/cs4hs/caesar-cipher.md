@@ -1,6 +1,5 @@
 ---
-layout: flow-chapter
-bodyclass: flow-chapter
+layout: default
 title: Caesar Cipher
 course: cs4hs
 

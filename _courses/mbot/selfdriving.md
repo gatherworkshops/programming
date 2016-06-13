@@ -1,5 +1,5 @@
 ---
-layout: chapter
+layout: default
 title: Welcome
 course: workshop
 
@@ -46,7 +46,7 @@ slides:
 
 
       ## Hmmm
-      ![Thinking]([[BASE_URL]]/media/images/slidecontent/thinking.gif)
+      ![Thinking](assets/images/thinking.gif)
       Have a think about statements/commands that would be used.
       Googling is encouraged. 
     notes: |
@@ -60,7 +60,7 @@ slides:
 
 
       ## Self Driving Robot Challenge
-      ![We can Do it]([[BASE_URL]]/media/images/slidecontent/wecandoit.jpg){: height="300" width="250"}
+      ![We can Do it](assets/images/wecandoit.jpg){: height="300" width="250"}
       Program your robot to keep driving without smashing into anything.
       Apply what you've learnt.  
       

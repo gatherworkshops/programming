@@ -1,6 +1,5 @@
 ---
-layout: chapter
-bodyclass: chapter
+layout: default
 title: Ciphers
 course: cs4hs
 

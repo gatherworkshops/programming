@@ -1,5 +1,5 @@
 ---
-layout: chapter
+layout: default
 bodyclass: chapter
 title: Layouts
 course: levelthree
@@ -14,8 +14,6 @@ slides:
       :)
 
     content: |
-
-      ![Gather Workshops Logo]([[BASE_URL]]/assets/images/gw_logo.png)
 
       # Layouts
       _Putting widgets in their place_
@@ -38,7 +36,7 @@ slides:
 
       ## Geometry Managers
 
-      ![Pack, Grid, and Place Layouts]([[BASE_URL]]/media/images/slidecontent/geometry-managers.svg)
+      ![Pack, Grid, and Place Layouts](assets/images/geometry-managers.svg)
 
 
 ##########
@@ -107,7 +105,7 @@ slides:
 
       ## Complete Your Grid
 
-      ![Simple Grid Demo]([[BASE_URL]]/media/images/slidecontent/simple-grid-demo.svg)
+      ![Simple Grid Demo](assets/images/simple-grid-demo.svg)
 
       Add widgets so your app looks (sort of) like the example
       {: .checkpoint }
@@ -136,7 +134,7 @@ slides:
 
       We can configure columns to resize at different rates:
 
-      ![Simple Grid Demo]([[BASE_URL]]/media/images/slidecontent/resizing.svg)
+      ![Simple Grid Demo](assets/images/resizing.svg)
 
       ```python
       window.columnconfigure(0, weight=0)
@@ -163,7 +161,7 @@ slides:
 
       Widgets are aligned within cells using compass points:
 
-      ![Sticky Locations]([[BASE_URL]]/media/images/slidecontent/stickiness.svg){: height="400" }
+      ![Sticky Locations](assets/images/stickiness.svg){: height="400" }
 
 
 ##########
@@ -207,7 +205,7 @@ slides:
 
       Align your form widgets to look like this:
 
-      ![Sticky Form]([[BASE_URL]]/media/images/slidecontent/sticky-form.svg){: height="300" }
+      ![Sticky Form](assets/images/sticky-form.svg){: height="300" }
 
       Your form should resize smartly, like in the picture
       {: .checkpoint }
@@ -226,7 +224,7 @@ slides:
     content: |
       ## Complex Grid
 
-      ![Complex Grid]([[BASE_URL]]/media/images/slidecontent/complex-grid.svg){: height="400" }
+      ![Complex Grid](assets/images/complex-grid.svg){: height="400" }
 
       Open up `membermanager.py`.
 
@@ -253,7 +251,7 @@ slides:
     content: |
       ## Divide into Cells
 
-      ![Dividing Up a Complex Grid]([[BASE_URL]]/media/images/slidecontent/divide-into-cells.svg){: height="400" }
+      ![Dividing Up a Complex Grid](assets/images/divide-into-cells.svg){: height="400" }
 
       Divide your layout into cells by drawing lines
       between neighbouring widgets.
@@ -274,7 +272,7 @@ slides:
     content: |
       ## Identify Content Cells
 
-      ![Identifying Content Cells]([[BASE_URL]]/media/images/slidecontent/find-content-cells.svg){: height="400" }
+      ![Identifying Content Cells](assets/images/find-content-cells.svg){: height="400" }
 
       Highlight every cell which contains
       the top left corner of a widget.
@@ -293,7 +291,7 @@ slides:
     content: |
       ## Find Spanning Cells
 
-      ![Measuring Rowspan and Colspan]([[BASE_URL]]/media/images/slidecontent/find-spanning-cells.svg){: height="400" }
+      ![Measuring Rowspan and Colspan](assets/images/find-spanning-cells.svg){: height="400" }
 
       Highlight row spans and column spans
       for any widgets that need it.
@@ -339,7 +337,7 @@ slides:
 
       ## Challenge:<br>Happy Shopper
 
-      ![Happy Shopper Challenge]([[BASE_URL]]/media/images/slidecontent/grid-challenge.svg){: height="400" }
+      ![Happy Shopper Challenge](assets/images/grid-challenge.svg){: height="400" }
 
       Create a new app called `happyshopper.py`
       and reproduce this grid layout.
@@ -357,7 +355,7 @@ slides:
 
     content: |
 
-      ![Thumbs Up!]([[BASE_URL]]/assets/images/thumbs-up.svg){: height="200" }
+      ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200" }
 
       ## Layouts: Complete!
 

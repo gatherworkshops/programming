@@ -1,5 +1,5 @@
 ---
-layout: chapter
+layout: default
 title: Remote Control
 course: workshop
 
@@ -30,7 +30,7 @@ slides:
 
 
       ## Remote Control
-      ![Remote]([[BASE_URL]]/media/images/slidecontent/remote3.jpg){: height="300" width="270"}
+      ![Remote](assets/images/remote3.jpg){: height="300" width="270"}
       This is your robot remote control.
       You can program the buttons to do anything you like.
        
@@ -49,7 +49,7 @@ slides:
       
 
       ## Remote Buttons
-      ![Control commands]([[BASE_URL]]/media/images/slidecontent/remote1.jpg){: height="300" width="450"}
+      ![Control commands](assets/images/remote1.jpg){: height="300" width="450"}
       The IR Remote block allows you to react to button presses.
       You can simply program it to do something when **A** is pressed.
 
@@ -66,7 +66,7 @@ slides:
 
       ## Example 
 
-      ![Remote Instruction]([[BASE_URL]]/media/images/slidecontent/remote2.jpg){: height="250"}
+      ![Remote Instruction](assets/images/remote2.jpg){: height="250"}
       When **A** is pressed robot lights come on. 
       Try it out yourself!
     notes: |

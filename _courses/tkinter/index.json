@@ -1,0 +1,64 @@
+---
+layout: coursedata
+title: Apps with TkInter
+course: tkinter
+
+standard: AS91073
+heading: Apps with TkInter
+tagline: AS-91073 Create a complex computer program for a specified purpose
+
+studentsurvey: https://gather.typeform.com/to/m3cJsR
+teachersurvey: https://gather.typeform.com/to/rLqMQK
+
+chapters: 
+
+  - name: welcome
+    subtitle: Course Intro
+    title: Welcome
+    description: Course plan and intro
+
+  - name: review
+    subtitle: Chapter One
+    title: Skills Review
+    description: What we already know
+
+  - name: gui
+    subtitle: Chapter Two
+    title: Graphical Widgets
+    description: Available Tkinter Widgets
+
+  - name: layouts
+    subtitle: Chapter Three
+    title: Layouts
+    description: Using The Grid Manager
+
+  - name: events
+    subtitle: Chapter Four
+    title: Interaction
+    description: Mouse and Keyboard Events
+
+  - name: data
+    subtitle: Chapter Five
+    title: Data Management
+    description: Classes and Complex Data
+    published: false
+
+  - name: planning
+    subtitle: Chapter Six
+    title: Planning
+    description: Coming Soon
+    published: false
+
+  - name: building
+    subtitle: Chapter Seven
+    title: Build and Test
+    description: Coming Soon
+    published: false
+
+  - name: submission
+    subtitle: Chapter Eight
+    title: Submission
+    description: Coming Soon
+    published: false
+    
+---

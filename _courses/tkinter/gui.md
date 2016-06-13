@@ -1,5 +1,5 @@
 ---
-layout: chapter
+layout: default
 bodyclass: chapter
 title: Graphical Widgets
 course: levelthree
@@ -16,8 +16,6 @@ slides:
       These widgets can be combined in any layout to create a basic app.
 
     content: |
-
-      ![Gather Workshops Logo]([[BASE_URL]]/assets/images/gw_logo.png)
 
       # Graphical Widgets
       _The components that make up apps_
@@ -240,7 +238,7 @@ slides:
 
       ## Challenge:<br> Application Form
       
-      ![Cat App Example]([[BASE_URL]]/media/images/slidecontent/cat-app.png){: height="445"}
+      ![Cat App Example](assets/images/cat-app.png){: height="445"}
 
       Recreate this app using what you have learned.
 
@@ -259,7 +257,7 @@ slides:
 
     content: |
 
-      ![Thumbs Up!]([[BASE_URL]]/assets/images/thumbs-up.svg){: height="200"}
+      ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200"}
 
       ## Graphical Widgets: Complete!
 

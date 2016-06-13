@@ -1,5 +1,5 @@
 ---
-layout: chapter
+layout: default
 title: More Features
 course: workshop
 
@@ -26,7 +26,7 @@ slides:
 
 
       ## Forever loop
-      ![Forever Loop]([[BASE_URL]]/media/images/slidecontent/giphy.gif){: height="250" width="400"}
+      ![Forever Loop](assets/images/giphy.gif){: height="250" width="400"}
       What if you want your robot to drive forwards and turn right forever?
       Well... Until the battery dies.   
     notes: |
@@ -43,7 +43,7 @@ slides:
       
 
       ## Try it out
-      ![Forever Loop]([[BASE_URL]]/media/images/slidecontent/forever.jpg){: height="250" width="400"}
+      ![Forever Loop](assets/images/forever.jpg){: height="250" width="400"}
       Try this program with your own robot. 
       
 
@@ -62,7 +62,7 @@ slides:
       
 
       ## Repeat
-      ![Repeat Loop]([[BASE_URL]]/media/images/slidecontent/giphy 2.gif){: height="250" width="400"}
+      ![Repeat Loop](assets/images/giphy 2.gif){: height="250" width="400"}
       What about repeating just 3 times?
       
 
@@ -79,7 +79,7 @@ slides:
       
 
       ## Example
-      ![Repeat Loop]([[BASE_URL]]/media/images/slidecontent/repeat.jpg){: height="250" width="400"}
+      ![Repeat Loop](assets/images/repeat.jpg){: height="250" width="400"}
       In this case you would use a repeat loop.
       Try this program.
       
@@ -95,11 +95,12 @@ slides:
 
   - content: |
 
-      ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200"}
+      ![Infinity Loop](assets/images/infinity-loop.svg){: height="250"}
 
-      ## Mini challenge
+      ## Challenge: Infinity Loop
   
-      Do a figure 8 motion 3 times. 
+      Program your robot to drive in a 
+      figure 8 motion which repeats forever. 
 
 
     notes: |
@@ -107,14 +108,26 @@ slides:
       Do you remember how to use angles?
 
 ##########
+  
+
+  - content: |
+
+      ![Star Shape](assets/images/star-shape.svg){: height="250"}
+
+      ## Challenge: Star-Struck
+  
+      Program your robot to trace a single five-point star.
+      You must use a loop in your program.
 
 
 
   - content: |
 
-      ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200"}
+      ![Basic Maze](assets/images/basic-maze.svg){: height="250"}
 
-      ## Challenge: Create a maze & program your robot to finish it. 
+      ## Challenge: Maze Navigator
+
+      Create a maze and program your robot to finish it. 
       
 
       

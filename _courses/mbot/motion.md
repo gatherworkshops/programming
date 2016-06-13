@@ -1,6 +1,6 @@
 ---
-layout: chapter
-title: Welcome
+layout: default
+title: Basic Motion
 course: workshop
 
 slides:
@@ -11,7 +11,7 @@ slides:
 
       ![Gather Workshops Logo]([[BASE_URL]]/theme/assets/images/gw_logo.png)
 
-      # Basic Motions
+      # Basic Motion
       
 
     notes: |
@@ -30,7 +30,7 @@ slides:
 
 
       ## Starting Point
-      ![Starting Point]([[BASE_URL]]/media/images/slidecontent/startingpoint.jpg){: height="250" width="400"}
+      ![Starting Point](assets/images/startingpoint.jpg){: height="250" width="400"}
       Always start with the _mBot Program_ block.
       Without this entry point, your program will not start.  
     notes: |
@@ -46,9 +46,9 @@ slides:
 
 
       ## Basic Motions
-      ![Basic Motions]([[BASE_URL]]/media/images/slidecontent/basic motion1.jpg){: height="250" width="400"}
+      ![Basic Motions](assets/images/basic motion1.jpg){: height="250" width="400"}
       You can go forwards, backwards, turn right, turn left. 
-      You can also alter your robot speed. 
+      You can also alter your robot's speed. 
     notes: |
 
       There are many other features you can add to your robot too, eg: LED lights, sensors, we will do more of this later.
@@ -63,9 +63,13 @@ slides:
 
 
       ## Wait
-      ![Basic Motions]([[BASE_URL]]/media/images/slidecontent/wait.jpg){: height="250" width="400"}
-      The wait command means how long your previous block will go on for. 
-      Try this program.
+      ![Basic Motions](assets/images/wait.jpg){: height="250" width="400"}
+      The wait command means how long the 
+      previous block will go on for. 
+      
+      Copy this program on your own computer.
+      {:.checkpoint}
+
     notes: |
 
       Wait does not meaning stopping and waiting, it simply means that your motion will go on for a certain amount of time. 
@@ -77,12 +81,17 @@ slides:
          
   - content: |
 
-      ## Uploading Program to Robot
+      ## Uploading programs to the robot
 
-      - ![Instruction 1]([[BASE_URL]]/media/images/slidecontent/basic motion3.jpg){: height="200" width="300"}To see program code.
-      - ![Instruction 2]([[BASE_URL]]/media/images/slidecontent/basic motion4.jpg){: height="200" width="300"}To upload program to mBot.
-      - ![Instruction 3]([[BASE_URL]]/media/images/slidecontent/basic motion5.jpg){: height="200" width="300"}Your robot is ready to go!
+      - ![Instruction 1](assets/images/basic motion3.jpg){: height="200" width="300"}To see program code.
+      - ![Instruction 2](assets/images/basic motion4.jpg){: height="200" width="300"}To upload program to mBot.
+      - ![Instruction 3](assets/images/basic motion5.jpg){: height="200" width="300"}Your robot is ready to go!
       {: .flex-list}
+
+      Upload your program to the robot.
+      {:.checkpoint}
+
+
     notes: |
 
       Make sure your mBot is plugged in and connected through serial port before clicking on uploading.
@@ -94,10 +103,11 @@ slides:
 
       
 
-      ## Reset
-      ![Control commands]([[BASE_URL]]/media/images/slidecontent/reset.jpg){: height="250" width="400"}
-      Want to go again?
-      To repeat the program simply push the reset button on the robot. 
+      ## Want to go again?
+      ![Control commands](assets/images/reset.jpg){: height="250" width="400"}
+      
+      To repeat the same program again, 
+      push the reset button on the robot. 
       
 
     notes: |
@@ -111,9 +121,10 @@ slides:
 
       ## Turning your robot
       
-      There is no precise way of turning your robot, every turn is measured in seconds. 
+      There is no precise way of turning your robot, 
+      because the length of a turn is measured in seconds. 
       
-      How would you turn it exactly a quarter?
+      How would you program an exact quarter turn?
       
 
     notes: |
@@ -132,10 +143,13 @@ slides:
 
       
 
-      ## Challenge
+      ## Challenge: Perfect Squares
       
-      Make your robot drive in a square
-      You should only need the basic motions we have covered.
+      Program your robot drive in a square using 
+      the basic motions we have covered.
+
+      Your robot should drive in an exact square.
+      {:.checkpoint}
       
 
     notes: |
@@ -153,7 +167,7 @@ slides:
 
       ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200"}
 
-      ## Basic Motions: Completed
+      ## Basic Motion: Completed
   
       
       [Take me to the next chapter!](features.html)
