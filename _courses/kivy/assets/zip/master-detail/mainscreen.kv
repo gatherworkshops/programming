@@ -1,0 +1,26 @@
+#:kivy 1.0
+
+<MainScreen>:
+
+    RecycleView:
+        viewclass: 'Label'
+        data: root.contact_data
+        RecycleBoxLayout:
+            default_size: None, dp(56)
+            default_size_hint: 1, None
+            size_hint_y: None
+            height: self.minimum_height
+            orientation: 'vertical'
+
+
+    BoxLayout:
+        Label:
+            text: 'name'
+        Label:
+            text: 'birthday'
+        Label:
+            text: 'selection'
+
+    
+
+    
