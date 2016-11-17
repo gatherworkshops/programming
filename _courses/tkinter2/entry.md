@@ -64,7 +64,7 @@ slides:
 
       ## Setting the Entry Size
 
-      Specify the width of the entry box as a number of characters.
+      You can specify the width as a number of characters.
 
       ```python
       entry = tkinter.Entry(window)
@@ -78,24 +78,77 @@ slides:
 
   - content: |
 
-      ## Input Validation
+      ## Validating on Enter
 
       ```python
       entry = tkinter.Entry(window)
       entry.config(width=20)
-      entry.config(validatecommand=entry_is_valid)
-      entry.config(validate=focusout)
+      entry.bind("<Return>", validate_entry)
       entry.grid()
 
-      def entry_is_valid():
-          return false
-
+      def validate_entry():
+          entry_text = entry.get()
+          errors = []
+          // do validation
       ```
+      {:data-line="1-2,4"}
 
 
   - content: |
+      
+      ## Validating Input Length
 
-      ## Running a Function on Enter
+      ```python
+      def validate_text():
+          entry_text = entry.get()
+          error = None
+
+          if(len(entry_text) < 3):
+              error = "Length must be greater than 3 letters."
+      ```
+
+  - content: |
+
+      ## Validating Text-Only
+
+      ```python
+      def validate_text():
+          entry_text = entry.get()
+          error = None 
+
+          if len(entry_text) < 3:
+              error = "Length must be greater than 3 letters"
+
+          if entry_text.replace(" ", "").isalpha():
+              error += "Sorry, special characters aren't allowed"
+      ```
+
+  - content: |
+
+      ## Validating Positive Numbers
+
+      ```python
+      def validate_integer():
+          entry_text = entry.get()
+          error = None
+
+          if !entry_text.isdigit():
+              errors.append("Input must be positive numbers only")
+      ```
+
+  - content: |
+
+      ## Validating any Number
+
+      ```python
+      def validate_integer():
+          entry_text = entry.get()
+          errors = [] 
+
+          if !entry_text.isdigit():
+              errors.append("Input must be positive numbers only")
+      ```
+
 
   - content: |
 
